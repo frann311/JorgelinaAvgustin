@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Great+Vibes&family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Great+Vibes&family=Josefin+Sans:wght@200&family=Playball&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <sectiom class="container">
+            <div class="logo ">
+               <a href="index.html">Jorgelina Avgustin</a>
+            </div>
+            <button class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
+                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
+            </button>
+            <nav class="menu ">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT ME</a>
+                <a href="media.html">MEDIA</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </sectiom> 
+    </header>
+    
+    <section class="contact-container">
+        <div class="container">
+        <article class="contact">
+            
+            <form class="contact-form ">
+                <label for="">Name</label>
+                <input type="text" name="name" placeholder="ingresa tu nombre" title="el nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                <label for="">Email</label>
+                <input type="email" name="email" placeholder="ingresa tu email" title="email incorrecto"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <label for="">Message</label>
+                <textarea name="comments" cols="50" rows="10"  required></textarea>
+                <input class="btn" type="submit" value="Send message">
+            </form>
+        </article>
+    </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
