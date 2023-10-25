@@ -250,6 +250,8 @@
       width: auto;
       flex-direction: row;
 
+      height: 32%;
+
     }
     .none{
       display: inline;
@@ -664,24 +666,6 @@ h2{
 
 /* ////////////// FOOTER /////////// */ 
 
-.m-footer{
-background-color: var(--gray-color);
-}
-.m-card-container{
-  background-color: #fff;
-}
-.m-card{
-  padding: 2rem;
-  text-align: center;
-  font-size: 1.2rem;
-}
-.m-card h3{
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-.m-card p{
-  margin-bottom: 2rem;
-}
 
 @media screen and (min-width:768px){
   .video{
@@ -816,7 +800,8 @@ background-color: var(--gray-color);
 /* *********** Contact Form ********** */
 .contact-form{
   padding: 1rem;
-  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-form>*{
   padding: .5rem;
@@ -863,4 +848,41 @@ transition: all .5s ease-in-out;
   padding-left: 1rem;
 }
 
+.contact-info{
+  background-color: var(--red-color);
+  padding: 0 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+.contact-info p{
+  margin: 0 3rem;
+  padding-top: 2rem;
+}
+.contact-info img{
+height: auto;
+width: 10rem;
+padding: 0;
+margin: 0;
+}
+@media screen and (min-width:1024px){
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.contact-info{
+  width: 35%;
+}
+.contact-form{
+  margin-bottom: 5rem;
+}
+  .contact-form>label{
 
+    padding-top: 3rem;
+  }
+
+}
