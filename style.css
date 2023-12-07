@@ -520,7 +520,7 @@ h2{
 .section4{
   background-color: var(--light-blue-color);
   padding-top: 8rem;
-  
+  padding-bottom: 2rem;
 }
 .cards2{
   background-color: var(--light-blue-color);
@@ -566,15 +566,10 @@ h2{
   padding-bottom: 0rem;
 }
 
-.card img{
-  width: 2rem;
-}
-.link{
-  text-align: center;
-}
 
 .section4>img{
   display: none;
+  height: 0;
 }
 /* ////////////////SECTION4 MEDIA QUERY//////////// */ 
 
@@ -588,10 +583,11 @@ h2{
 }
 .section4{
   position: relative;
+  padding-bottom: 0;
 }
 .section4>img{
   display: block;
-  width: 15rem;
+  width: 12%;
   height: auto;
   position: absolute;
 }
@@ -623,11 +619,15 @@ h2{
 }
 .m-cabecera{
   padding-top: 3rem;
-  background-color: var(--gray-color);
+  background-color: var(--light-blue-color);
+  color: #fff;
+}
+.cont-cabecera{
+  color: #fff;
 }
 .m-h1{
   background-color: #ffffff00;
-  color: #000;
+
   font-family: "josefin sans";
   display: block;
   font-size: 2.5rem;
@@ -635,7 +635,7 @@ h2{
 .m-cabecera p{
   padding-top: 2rem;
   font-size: 1.2rem;
-  color: #000;
+
 }
 .videos{
   background-color: var(--gray-color);
@@ -683,7 +683,7 @@ h2{
   left: 25%;
 }
 
-/* ////////////// FOOTER /////////// */ 
+/* //////////////   MEDIA QUERY /////////// */ 
 
 
 @media screen and (min-width:768px){
@@ -693,10 +693,24 @@ h2{
 }
 @media screen and (min-width:1024px){
   .m-cabecera{
-    width: 40rem;
-    margin-left: 20%;
-    margin-bottom: 10rem;
+    width: 100%;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+    position: relative;
   }
+  .cont-cabecera{
+    width: 55%;
+    padding-bottom: 3rem;
+  }
+  .m-cabecera img{
+    width: 13rem;
+    position: absolute;
+    right:15%;
+    bottom: 0;
+  }
+
+
+
   .m-cabecera h1{
     width: 70%;
     font-size: 2.8rem;
@@ -717,12 +731,17 @@ h2{
     flex-direction: row-reverse;
   }
   .sinopsis{
+    
     width: 50%;
     text-align: center;
-    margin-top: 6rem;
+    padding-top: 1rem;
   }
   .sinopsis p{
-    padding: 0 10rem;
+    padding: 0 20%;
+  }
+  .sinopsis h2{
+    padding-top: 9rem;
+    padding-bottom: 3rem;
   }
   .video{
   width: 50%;
@@ -734,14 +753,12 @@ h2{
   background-color: var(--gray-color);
   padding-top: 5rem;
 }
-.about1{
-  padding-bottom: 3rem;
-}
+
 .fondo{
   background-color: var(--light-blue-color);
   height: 15rem;
   position: relative;
-  margin-bottom: 1rem;
+  
 }
 .a-img{
   height: 15rem;
@@ -888,16 +905,21 @@ transition: all .5s ease-in-out;
   font-weight: bold;
   font-size: 1.4rem;
   margin: 1rem;
+  position: relative;
+  height: 25rem;
 }
 .contact-info p{
   margin: 0 3rem;
   padding-top: 2rem;
 }
 .contact-info img{
+position: absolute;
 height: auto;
 width: 10rem;
 padding: 0;
 margin: 0;
+bottom: -7%;
+left: 30%;
 }
 @media screen and (min-width:1024px){
 .contact-container{

@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Great+Vibes&family=Josefin+Sans:wght@200&family=Playball&display=swap" rel="stylesheet">
     
-    <title>Document</title>
+    <title>Write me</title>
+    <meta name="description" content="Book your first experience in Spanish" >
 </head>
 <body>
     <header class="header">
@@ -39,7 +40,9 @@
             <div class="contact-container">
         <article class="contact">
             
-            <form class="contact-form ">
+            <form   action="https://formspree.io/f/mzblndpl"
+                    method="POST" 
+                    class="contact-form ">
                 <label for="">Name</label>
                 <input type="text" name="name" placeholder="ingresa tu nombre" title="el nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                 <label for="">Email</label>
@@ -48,6 +51,9 @@
                 <label for="">Message</label>
                 <textarea name="comments" cols="50" rows="10"  required></textarea>
                 <input class="btn" type="submit" value="Send message">
+
+          
+
             </form>
         </article>
    
