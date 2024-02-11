@@ -1029,9 +1029,7 @@ display: none;
 
 }
 /* *********** Contact Form ********** */
-.contact-container{
-  height: 100vh;
-}
+
 .contact-form{
   padding: 1rem;
   margin-left: auto;
@@ -1093,6 +1091,8 @@ transition: all .5s ease-in-out;
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
+  
 }
 .contact-info p{
   margin: 0 3rem;
@@ -1104,9 +1104,15 @@ height: auto;
 width: 10rem;
 padding: 0;
 margin: 0;
-bottom: -9%;
+bottom: -11%;
 }
 /* //////////// Contact Form Media query //////// */
+
+@media screen and (min-width:768px){
+  .contact-container{
+    height: 100vh;
+  }
+}
 @media screen and (min-width:1024px){
 .contact-container{
   display: flex;
@@ -1117,6 +1123,7 @@ bottom: -9%;
 }
 .contact-info{
   width: 35%;
+  margin-bottom: 1rem;
 }
 .contact-form{
   margin-bottom: 5rem;
